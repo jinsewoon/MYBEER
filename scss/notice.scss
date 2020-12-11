@@ -1,0 +1,92 @@
+//subpage : notice
+#container{
+  #board{
+    .table_wrap{
+      margin: 50px 0;
+      h2{
+        font-size: 18px;
+        margin: 20px 0;
+      }
+      table{
+        width: 100%;
+        font-size: 14px;
+        border-collapse: collapse;
+        thead{
+          background: #666666;
+          tr{
+            th{
+              padding: 10px;
+              font-size: 14px;
+              color:#ffffff;
+              &:nth-of-type(1){width: 5%;}
+              &:nth-of-type(2){width: auto;}
+              &:nth-of-type(3){width: 10%;}
+              &:nth-of-type(4){width: 10%;}
+              &:nth-of-type(5){width: 5%;}
+            }
+          }
+        }
+        tbody{
+          width: 100%;
+          display: none;
+          &.on{ display: contents;}
+          tr{
+            &:hover{
+              background: #00b8ff;
+            }
+            td{
+              padding: 10px;
+              border-bottom: 1px solid #999999;
+              &:nth-of-type(1){width: 5%;}
+              &:nth-of-type(2){width: auto;}
+              &:nth-of-type(3){width: 10%;}
+              &:nth-of-type(4){width: 10%;}
+              &:nth-of-type(5){width: 5%;}
+            }
+            td:not(:nth-of-type(2)){
+              text-align: center;
+              color:#d1d1d1;
+            }
+            td:nth-of-type(1){
+              color:#000000;
+            }
+          }
+        }
+      }
+      .pagination{
+        margin: 20px;
+        ul{
+          display: flex;
+          justify-content: center;
+          li{
+            margin: 0 10px;
+            a{
+              font-size: 16px;
+              line-height: 20px;
+              color:#999999;
+            }
+            & .prev{
+              display: block;
+              width: 18px;
+              height: 20px;
+              background-image: url('../img/prev.png');
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+            & .next{
+              display: block;
+              width: 18px;
+              height: 20px;
+              background-image: url('../img/next.png');
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+            &:hover a{
+              color:#000000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

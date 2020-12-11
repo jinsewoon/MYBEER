@@ -1,0 +1,92 @@
+#container #product .infoWrap .infoBox {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#container #product .infoWrap .infoBox h2.title {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#container #product .infoWrap .infoBox p.desc {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 50px;
+  line-height: 24px;
+}
+
+#container #product .youtubeBox {
+  margin-bottom: 50px;
+}
+
+#container #product .youtubeBox p.desc {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 50px;
+  line-height: 24px;
+}
+
+#container #beerList {
+  background: #eaeaea;
+}
+
+#container #beerList .itemBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+#container #beerList .itemBox .beerItems {
+  flex: 30%;
+  flex-grow: 1;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #f9f9f9;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#container #beerList .itemBox .beerItems:hover {
+  border: 1px solid #00b8ff;
+  box-shadow: 10px 10px 10px gray;
+  transition: 0.8s;
+}
+
+#container #beerList .itemBox .beerItems img {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  height: 250px;
+}
+
+#container #beerList .itemBox .beerItems .itemInfoBox {
+  position: relative;
+  padding: 20px;
+  height: 190px;
+}
+
+#container #beerList .itemBox .beerItems .itemInfoBox .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #00b8ff;
+  margin-bottom: 10px;
+}
+
+#container #beerList .itemBox .beerItems .itemInfoBox .desc {
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+#container #beerList .itemBox .beerItems .itemInfoBox .beerInfo {
+  position: absolute;
+  bottom: 10px;
+}
+
+#container #beerList .itemBox .beerItems .itemInfoBox .beerInfo .info {
+  font-size: 12px;
+  color: #999999;
+}

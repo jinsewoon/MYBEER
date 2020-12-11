@@ -1,0 +1,234 @@
+//Layout
+
+#wrap{
+  position: relative;
+  height: 100%;
+    #m_header{
+      display: none;
+      height: 50px;
+        .sidebar{
+            display: none;
+            position: fixed;
+            top: 0;
+            bottom:0;
+            left:-100%;
+            width:30rem;
+            background:rgba(255,255,255,1);
+            transition: 1s;
+            z-index: 100;
+              .sidebar_close_btn{
+                position: absolute;
+                display:inline-block;
+                right:-4rem;
+                top:0;
+                width:40px;
+                height:40px;
+                &:before{
+                  content: '';
+                  position: absolute;
+                  display: inline-block;
+                  left:50%;
+                  top:50%;
+                  width:20px;
+                  height:1px;
+                  transform: translate(-50%,-50%) rotate(45deg);
+                  background:black;
+                }
+                &:after{
+                  content: '';
+                  position: absolute;
+                  display: inline-block;
+                  left:50%;
+                  top:50%;
+                  width:20px;
+                  height:1px;
+                  transform: translate(-50%,-50%) rotate(-45deg);
+                  background:black;
+                }
+              }
+              .sidebar_list{
+                 padding: 2rem;
+                    & > li{
+                      font-size: 2.4rem;
+                      padding: 1rem 2rem;
+                        &:hover > a{
+                          border-bottom: 1px solid #00b8ff;
+                        }
+                        & > ul{
+                          display: none;
+                          & > li {
+                            font-size: 1.8rem;
+                            padding-left: 2.4rem;
+                          }
+                        }
+                    }
+              }
+        }
+        .m_upper{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          height: 50px;
+          background: #ffffff;
+          text-align: center;
+           .btn_box{
+             display:inline-block;
+             position: absolute;
+             left:0;
+             width: 50px;
+             height: 50px;
+             .sidebar_open_btn{
+               position: absolute;
+               top:50%;
+               left:50%;
+               transform: translate(-50%,-50%);
+               width:20px;
+               height: 1px;
+               background: #000000;
+               &:before{
+                 content: '';
+                 position: absolute;
+                 display: inline-block;
+                 top:-8px;
+                 left: 0;
+                 width:20px;
+                 height: 1px;
+                 background: #000000;
+               }
+               &:after{
+                 content: '';
+                 position: absolute;
+                 display: inline-block;
+                 top:8px;
+                 left: 0;
+                 width:20px;
+                 height: 1px;
+                 background: #000000;
+               }
+             }
+           }
+        }
+    }
+    #header{
+       height: 10rem;
+       border-bottom:1px solid $borderColor;
+         .w-1260{
+           .w-1260inner{
+             height: 100%;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             .main_menu{
+               display: flex;
+               height: 100%;
+               padding: 0 5rem;
+                   &>li{
+                   display: flex;
+                   align-items: center;
+                   position: relative;
+                   padding: 0 2rem;
+                   &>a{
+                     position: relative;
+                     font-size: 1.6rem;
+                     span{
+                       display: none;
+                       position: absolute;
+                       bottom: -3px;
+                       left:0;
+                       width: 100%;
+                       height: 1px;
+                       background: $boderColorHover;
+                       &.on{
+                         display: block;
+                       }
+                     }
+                   }
+                   &:hover .dropbox{
+                     opacity: 1
+
+                   }
+                  }
+             }
+           }
+         }
+    }
+    // #mainbanner{} <<--swiper-slide
+    #footer{
+      background: #eaeaea;
+      .sns_iconBox{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        margin-bottom: 10px;
+        a{
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-size: cover;
+          margin: 0 10px
+        }
+        .instagram{
+          background-image: url('../img/instargram.png');
+        }
+        .blog{
+          background-image: url('../img/blog.png');
+        }
+      }
+      .footer_text{
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom: 50px;
+        cursor: default;
+      }
+    }
+    @media screen and  ( max-width : 480px ) {
+      .w-1260{
+        position: relative;
+        width: 40rem;
+        margin: 0 auto;
+      }
+      .bn_text{
+        h2{
+          font-size: 2rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+        .bn_btn{
+          width:6rem;
+          height: 2rem;
+          line-height: 2rem;
+          font-size: 1rem;
+        }
+      }
+      #wrap{
+          #m_header{
+            display: block;
+              .sidebar{
+                 display: block;
+              }
+          }
+          #header{
+            display: none;
+          }
+          #container{
+            #company_info{
+              .pd_slidebox{
+                width: 40rem;
+                .text_box{
+                  .pd_name{
+                    font-size: 1.2rem;
+                  }
+                  .pd_desc{
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+      }
+    }
+
+}

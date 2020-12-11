@@ -1,0 +1,93 @@
+//Intro
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+// font-family: 'Indie Flower', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+// font-family: 'Amatic SC', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+// font-family: 'Nothing You Could Do', cursive;
+@keyframes introAni {
+  0%{ width:0; height: 0 ;}
+  100%{ width:100%; height: 100% ; }
+}
+@keyframes introTextAni {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+#intro{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+  font-family: 'Amatic SC', cursive;
+   video{
+     width: auto;
+     height: auto;
+   }
+   .policy_box{
+     position: absolute;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     width:100vw;
+     height:100vh;
+     opacity: 0;
+     font-size: 2rem;
+     background: rgba(140,140,140,0.7) ;
+     text-align: center;
+     animation: introTextAni 2.5s forwards;
+     h1{
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform: translate( -50%, -50%);
+       width:100%;
+       line-height: 4rem;
+       letter-spacing: 0.2rem;
+       opacity: 0;
+       color: #ffffff ;
+       animation: introTextAni 1.5s 2s forwards;
+       cursor: default;
+       p{
+         display: inline-block;
+         color: red;
+         margin: 0;
+       }
+     }
+     h1.btnNoText{
+       font-size: 5rem;
+       line-height: 6rem;
+       opacity: 0;
+       display: none;
+       animation: introTextAni 2s forwards;
+     }
+     .button_box{
+       position: absolute;
+       top:60%;
+       left:50%;
+       transform: translate( -50%, -50%);
+       .button{
+         display: inline-block;
+         width:10rem;
+         height: 5rem;
+         line-height: 5rem;
+         margin:8rem 2rem 0;
+         font-size: 3rem;
+         font-weight: 700;
+         color:#ffffff;
+         border: 2px solid #ffffff;
+         cursor: pointer;
+         opacity: 0;
+         animation: introTextAni 1.5s 2s forwards;
+         &:hover{
+           border: 2px solid #ffffff;
+           background: #81d7d8;
+         }
+       }
+     }
+   }
+}

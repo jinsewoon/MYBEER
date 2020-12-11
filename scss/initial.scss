@@ -1,0 +1,23 @@
+html,body{
+  height: 100%;
+  font-size: 10px;
+}
+
+body{
+  // background: $layoutBg;
+  // color: $fontColorBasic;
+}
+
+*{margin: 0; padding: 0;}
+
+li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  &:hover{
+    // color: $fontColorHover;
+  }
+}

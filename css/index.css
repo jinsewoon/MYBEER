@@ -1,0 +1,158 @@
+#container #company_info .w-1260 .introduce_box {
+  margin: 50px 0;
+}
+
+#container #company_info .w-1260 .introduce_box h2 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#container #company_info .w-1260 .introduce_box p {
+  font-size: 16px;
+  line-height: 25px;
+  cursor: default;
+}
+
+#container #company_info .w-1260 .pd_slidebox {
+  position: relative;
+  overflow: hidden;
+  width: 1260px;
+  margin-bottom: 150px;
+}
+
+#container #company_info .w-1260 .pd_slidebox .pd_title {
+  font-size: 20px;
+  margin: 30px 0;
+  text-align: center;
+  cursor: default;
+}
+
+#container #proposal {
+  position: relative;
+  background: #eaeaea;
+  padding-bottom: 50px;
+}
+
+#container #proposal .w-1260 .formFlexBox {
+  display: flex;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox {
+  flex: 50%;
+  margin: 10px;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .form_group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .form_group label {
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .form_group label:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  transform: translate(-50%);
+  width: 3px;
+  height: 3px;
+  margin-left: 5px;
+  background: red;
+  border-radius: 100%;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .form_group input {
+  font-size: 18px;
+  border: 1px solid #999999;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .form_group .telNum_box {
+  display: flex;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .form_group .telNum_box input {
+  width: 50px;
+  margin: 0 10px;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .form_group .telNum_box input:first-child {
+  margin-left: 0;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .proposal_content textarea {
+  height: 176px;
+  border: 1px solid #999999;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .file_upload .uploadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 30px;
+  font-size: 14px;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #999999;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .file_upload .uploadBtn:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../img/upload_12X12.png");
+  background-repeat: no-repeat;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .file_upload .uploadBtn:after {
+  display: none;
+}
+
+#container #proposal .w-1260 .formFlexBox .formBox .file_upload input {
+  display: none;
+}
+
+#container #proposal .w-1260 .submitBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container #proposal .w-1260 .submitBox .submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #999999;
+}
+
+#container #proposal .w-1260 .submitBox .submitBtn:after {
+  display: none;
+}
+
+#container #proposal .w-1260 .submitBox input {
+  display: none;
+}
+
+#container #contact_us .w-1260 p {
+  font-size: 1.6rem;
+}
+
+#container #contact_us .w-1260 .mapBox {
+  margin: 50px 0;
+}

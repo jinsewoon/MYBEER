@@ -1,0 +1,132 @@
+#container #board .table_wrap {
+  margin: 50px 0;
+}
+
+#container #board .table_wrap h2 {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+#container #board .table_wrap table {
+  width: 100%;
+  font-size: 14px;
+  border-collapse: collapse;
+}
+
+#container #board .table_wrap table thead {
+  background: #666666;
+}
+
+#container #board .table_wrap table thead tr th {
+  padding: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#container #board .table_wrap table thead tr th:nth-of-type(1) {
+  width: 5%;
+}
+
+#container #board .table_wrap table thead tr th:nth-of-type(2) {
+  width: auto;
+}
+
+#container #board .table_wrap table thead tr th:nth-of-type(3) {
+  width: 10%;
+}
+
+#container #board .table_wrap table thead tr th:nth-of-type(4) {
+  width: 10%;
+}
+
+#container #board .table_wrap table thead tr th:nth-of-type(5) {
+  width: 5%;
+}
+
+#container #board .table_wrap table tbody {
+  width: 100%;
+  display: none;
+}
+
+#container #board .table_wrap table tbody.on {
+  display: contents;
+}
+
+#container #board .table_wrap table tbody tr:hover {
+  background: #00b8ff;
+}
+
+#container #board .table_wrap table tbody tr td {
+  padding: 10px;
+  border-bottom: 1px solid #999999;
+}
+
+#container #board .table_wrap table tbody tr td:nth-of-type(1) {
+  width: 5%;
+}
+
+#container #board .table_wrap table tbody tr td:nth-of-type(2) {
+  width: auto;
+}
+
+#container #board .table_wrap table tbody tr td:nth-of-type(3) {
+  width: 10%;
+}
+
+#container #board .table_wrap table tbody tr td:nth-of-type(4) {
+  width: 10%;
+}
+
+#container #board .table_wrap table tbody tr td:nth-of-type(5) {
+  width: 5%;
+}
+
+#container #board .table_wrap table tbody tr td:not(:nth-of-type(2)) {
+  text-align: center;
+  color: #d1d1d1;
+}
+
+#container #board .table_wrap table tbody tr td:nth-of-type(1) {
+  color: #000000;
+}
+
+#container #board .table_wrap .pagination {
+  margin: 20px;
+}
+
+#container #board .table_wrap .pagination ul {
+  display: flex;
+  justify-content: center;
+}
+
+#container #board .table_wrap .pagination ul li {
+  margin: 0 10px;
+}
+
+#container #board .table_wrap .pagination ul li a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
+
+#container #board .table_wrap .pagination ul li .prev {
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-image: url("../img/prev.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#container #board .table_wrap .pagination ul li .next {
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-image: url("../img/next.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#container #board .table_wrap .pagination ul li:hover a {
+  color: #000000;
+}
