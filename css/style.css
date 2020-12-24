@@ -398,7 +398,7 @@ a {
 }
 
 #intro video {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
@@ -690,9 +690,9 @@ a {
 
 #container #beerList .itemBox .beerItems img {
   display: block;
-  width: 250px;
+  width: 200px;
   margin: 0 auto;
-  height: 250px;
+  height: 200px;
 }
 
 #container #beerList .itemBox .beerItems .itemInfoBox {
@@ -702,8 +702,8 @@ a {
 }
 
 #container #beerList .itemBox .beerItems .itemInfoBox .title {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   color: #00b8ff;
   margin-bottom: 10px;
 }
@@ -720,8 +720,9 @@ a {
 }
 
 #container #beerList .itemBox .beerItems .itemInfoBox .beerInfo .info {
-  font-size: 12px;
-  color: #999999;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000000;
 }
 
 #container #board .table_wrap {

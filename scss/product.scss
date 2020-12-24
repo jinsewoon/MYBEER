@@ -51,17 +51,17 @@
         }
         img{
           display: block;
-          width: 250px;
+          width: 200px;
           margin: 0 auto;
-          height: 250px;
+          height: 200px;
         }
         .itemInfoBox{
           position: relative;
           padding: 20px;
           height: 190px;
           .title{
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 18px;
+            font-weight: 700;
             color:#00b8ff;
             margin-bottom: 10px;
           }
@@ -74,8 +74,9 @@
             position: absolute;
             bottom:10px;
             .info{
-              font-size: 12px;
-              color:#999999;
+              font-size: 14px;
+              font-weight: bolder;
+              color:#000000;
             }
           }
         }
